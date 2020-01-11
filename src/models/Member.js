@@ -26,4 +26,4 @@ const MemberSchema = new mongoose.Schema({
 
 MemberSchema.plugin(mongoosePaginate);
 
-mongoose.model("Member", MemberSchema);
+module.exports = mongoose.model("Member", MemberSchema);
